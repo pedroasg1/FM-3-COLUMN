@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+/* font-family: "Lexend", sans-serif; */
+/* font-family: "Big Shoulders Display", sans-serif; */
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--white-paragraphs);
+}
+
+.sedans__container{
+    width: 910px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.sedans__picture{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.sedans__card{
+    width: 35%;
+    background: var(--Bright-orange);
+    padding: 3rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.title{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+    color: var(--Very-light-gray);
+    padding-bottom: 25px;
+}
+
+.paragraph{
+    padding-bottom: 6.5rem;
+}
+
+.sedans__btn{
+    display: inline-block;
+    background: var(--Very-light-gray);
+    width: 9rem;
+    color: var(--Bright-orange);
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/* CARD SUVS */
+
+.suvs__card{
+    background: var(--Dark-cyan);
+    border-radius: 0;
+}
+
+.suvs__picture{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.suvs__btn{
+    color: var(--Dark-cyan);
+}
+
+/* LUXURY CARD */
+
+.luxury__card{
+    background: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury__picture{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.luxury__btn{
+    color: var(--Very-dark-cyan);
+}
+
+@media screen and (max-width: 375px){
+    .sedans__container{
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .sedans__card{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .suvs__card{
+        border-radius: 0;
+    }
+
+    .luxury__card{
+        border-radius: 0 0 10px 10px;
+    }
+}
